@@ -1,0 +1,380 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Dosis', sans-serif;
+    background-color: #04575F;
+}
+
+body::-webkit-scrollbar {
+    width: 0px;
+}
+
+header {
+    width: 100%;
+}
+
+header,
+.mini-header {
+    background-color: #021D38;
+    overflow: hidden;
+}
+
+.logo {
+    padding: 10px 3%;
+}
+
+.logo a.blogify {
+    padding-left: 40px;
+    font-family: 'Ephesis', cursive;
+    text-decoration: none;
+    color: #f1ac4c;
+    font-size: x-large;
+}
+
+h2.title {
+    padding: 160px 5%;
+    margin-top: -50px;
+}
+
+.logo nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo nav ul li {
+    display: inline-block;
+    margin: 10px 10px;
+}
+
+.logo nav ul li a {
+    color: #f1ac4c;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 10px;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.logo nav ul li a.start,
+.logo nav ul li a.logout {
+    border: 2px solid black;
+    border-radius: 50px;
+    width: max-content;
+    background-color: #52C4D5;
+}
+
+.logo nav ul li a:hover {
+    color: white;
+}
+
+h2.title {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 45px;
+}
+
+h3.intro {
+    font-size: 23px;
+    margin-top: -150px;
+    padding: 10px 8%;
+}
+
+hr.hr1,
+hr.hr2 {
+    border: 1px solid black;
+}
+
+
+.introduction .project-info {
+    background-image: url(/—Pngtree—dark\ green\ cyan\ paper\ cut_1225583.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.introduction .project-info h2,
+.introduction .project-info p {
+    /* color: #71E9C4; */
+    color: #f1ac4c;
+}
+
+.introduction .project-info h2 {
+    font-family: 'Ephesis', cursive;
+    font-size: 100px;
+}
+
+.introduction .project-info p {
+    font-size: 40px;
+}
+
+.introduction .project-info a {
+    margin-top: 20px;
+    color: #f1ac4c;
+    background-color: #021D38;
+    border: #021D38 solid 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    margin-top: 70px;
+}
+
+.introduction .project-info a:hover {
+    background-color: #f1ac4c;
+    color: #021D38;
+    border-color: #f1ac4c;
+    font-weight: 900;
+}
+
+.h2,
+.inspiration h2,
+.team-members h2 {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    padding-top: 20px;
+    margin-bottom: 35px;
+    color: #021D38;
+}
+
+.feature-section,
+.about-section {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: 10%;
+    align-items: center;
+    min-height: 100dvh;
+}
+
+.feature,
+.feature1 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 1s;
+}
+
+.feature {
+    transform: translateX(100%);
+}
+
+.feature1 {
+    flex-direction: row-reverse;
+    transform: translateX(-100%);
+}
+
+.feature img,
+.feature1 img {
+    max-width: 60%;
+    border-radius: 10px;
+    margin-right: 30px;
+}
+
+.feature div h3,
+.feature1 div h3 {
+    font-family: 'Ephesis', cursive;
+    text-align: center;
+    font-size: 40px;
+    color: #f1ac4c;
+    margin-bottom: 30px;
+}
+
+.feature div p,
+.feature1 div p {
+    color: #AACCFF;
+    font-size: 22px;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.feature div,
+.feature1 div {
+    margin-bottom: 30px;
+    transition-delay: 100ms;
+}
+
+.inspiration p,
+.github-link p {
+    color: #AACCFF;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.inspiration span {
+    color: #f1ac4c;
+}
+
+.team-members {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    padding: 30px 0px 30px 0px;
+}
+
+.github-link p {
+    text-align: center;
+}
+
+.team-member ul {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.team-member ul li {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.team-member ul li a,
+.github-link a {
+    text-decoration: none;
+    background-color: #021D38;
+    color: #f1ac4c;
+    border: #021D38 5px solid;
+    border-radius: 20px;
+}
+
+.team-member ul li a:hover,
+.github-link a:hover {
+    color: #021D38;
+    background-color: #f1ac4c;
+    border-color: #f1ac4c;
+    font-weight: 600;
+}
+
+.github-link h2 {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    color: #021D38;
+    margin: 10px 0px 10px 0px;
+}
+
+hr {
+    width: 80%;
+    height: 2px;
+    background-color: #f1ac4c;
+    border: none;
+}
+
+/* for phone */
+@media (max-width: 480px) {
+    .introduction .project-info h2 {
+        font-size: 45px;
+    }
+
+    .introduction .project-info p {
+        font-size: 17px;
+    }
+
+    .logo nav ul li a {
+        font-size: 11px;
+        padding: 7px;
+    }
+    
+    .logo a.blogify {
+        font-size: large;
+        margin-left: -20px;
+    }
+
+    .h2, .inspiration h2, .team-members h2, .github-link h2 {
+        font-size: 20px;
+    }
+
+    .feature div h3, .feature1 div h3 {
+        font-size: 27px;
+        margin-bottom: 12px;
+    }
+
+    .feature div p, .feature1 div p {
+        font-size: 12px;
+    }
+
+    .feature img {
+        max-width: 50%;
+        margin-right: 15px;
+    }
+
+    .feature1 img {
+        max-width: 40%;
+        margin-left: 15px;
+    }
+
+    .inspiration p, .github-link p {
+        font-size: 15px;
+    }
+
+    .team-member h3 {
+        font-size: 16px;
+    }
+
+    .feature-section,
+    .about-section {
+        min-height: 100dvh;
+    }
+}
+
+/* for tablette */
+@media (min-width: 481px) and (max-width: 1024px) {
+    .introduction .project-info h2 {
+        font-size: 70px;
+    }
+
+    .introduction .project-info p {
+        font-size: 25px;
+    }
+
+    .logo a.blogify {
+        margin-left: -15px;
+    }
+
+    .h2, .inspiration h2, .team-members h2, .github-link h2 {
+        font-size: 30px;
+    }
+
+    .feature div h3, .feature1 div h3 {
+        font-size: 40px;
+    }
+
+    .feature div p, .feature1 div p {
+        font-size: 18px;
+    }
+
+    .feature img {
+        max-width: 50%;
+        margin-right: 15px;
+    }
+
+    .feature1 img {
+        max-width: 40%;
+        margin-left: 15px;
+    }
+
+    .inspiration p, .github-link p {
+        font-size: 22px;
+    }
+
+    .team-member h3 {
+        font-size: 17px;
+    }
+
+    .feature-section,
+    .about-section {
+        min-height: 100dvh;
+    }
+}
